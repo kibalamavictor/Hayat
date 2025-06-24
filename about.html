@@ -1,316 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Hayat Helping Hands</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    
-  </head>
-  <main>
-    <header class="main-header">
-      <div class="container header-content">
-        <div class="logo">
-          <a href="index.html">
-            <img
-              src="/assets/logo.png"
-              alt="Hayat Helping Hands Logo"
-            />
-          </a>
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="projects.html">Our Projects</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="donate-btn">
-          <a href="donate.html" class="btn">Donate</a>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+  <img src="./assets/about_background.png" alt="Hero background" class="hero-bg-image">
+  <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="Hayat Logo" class="logo-img" height="55px">
+                </a>
 
-    <section class="hero-section about-hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1>About Us</h1>
-      </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="mobile-donate-item"><a href="#donate">Donate</a></li>
+                </ul>
+
+                <a href="#donate" class="nav-donate-btn">Donate</a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    ☰
+                </button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>About Us</h1>
+        </div>
+
+
+
+<!-- ABOUT SECTION -->
+
+     <section class="about-section">
+        <div class="image-container">
+            <div class="hands-image">
+                <img src="./assets/about/baby.jpg" alt="Colorful paper cutout figures holding hands around a globe representing unity and global humanitarian work">
+                
+            </div>
+<div class="floating-icon">
+                <img src="./assets/about/people.png" alt="Community icon">
+            </div>
+
+        </div>
+
+        <div class="content-container">
+            
+            <h2 class="main-heading1">Serving Humanity with Compassion, One Project at a Time</h2>
+            
+            <p class="description1">
+                <span class="organization-name1">Hayat Aid Organization</span> is a non-profit charity based in Iganga, Uganda, dedicated to uplifting the lives of the poor, orphans, disabled, and underserved communities through impactful, faith-rooted humanitarian projects.
+            </p>
+            
+            <p class="services-text">
+                Since our founding, we've worked tirelessly to ensure that every meal shared, Quran distributed, well constructed, or mosque built not only meets a need — but restores dignity and hope.
+            </p>
+            
+          
+        </div>
     </section>
 
-    <main>
-      <section class="about-intro-section">...</section>
-      <section class="mission-values-section">...</section>
 
-      <section class="serving-humanity-section">
-        <div class="container">
-          <div class="serving-humanity-grid">
-            <div class="image-with-overlay">
-              <img
-                src="/assets/about/baby.jpg"
-                alt="Children in a classroom setting"
-              />
-              <div class="overlay-icon">
-                <img
-                  src="/assets/about/many.png"
-                  alt="Helping Hands Icon"
-                />
-              </div>
-            </div>
-            <div class="serving-humanity-content">
-              <h2>Serving Humanity with Compassion, One Project at a Time</h2>
-              <p>
-                <strong>HAYAT AID ORGANIZATION</strong> is a non-profit charity
-                based in Iganga, Uganda, dedicated to uplifting the lives of the
-                poor, orphans, disabled, and underserved communities through
-                impactful, faith-rooted humanitarian projects.
-              </p>
-              <p>
-                Since our founding, we've worked tirelessly to ensure that every
-                meal shared, Quran distributed, well constructed, or mosque
-                built not only meets a need - but restores dignity and hope.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="impact-statistics-section">
-        <div class="container">
-          <div class="stats-grid">
-            <div class="stat-item">
-              <i class="stat-icon fas fa-utensils"></i>
-              <div class="stat-text-content">
-                <span class="stat-number">5000+</span>
-                <span class="stat-description">meals served annually</span>
-              </div>
-            </div>
-            <div class="stat-item">
-              <i class="stat-icon fas fa-users"></i>
-              <div class="stat-text-content">
-                <span class="stat-number">800+</span>
-                <span class="stat-description"
-                  >families received Qurban meat in 2024</span
-                >
-              </div>
-            </div>
-            <div class="stat-item">
-              <i class="stat-icon fas fa-mosque"></i>
-              <div class="stat-text-content">
-                <span class="stat-number">15</span>
-                <span class="stat-description"
-                  >fully constructed mosques in rural villages</span
-                >
-              </div>
-            </div>
-            <div class="stat-item">
-              <i class="stat-icon fas fa-school"></i>
-              <div class="stat-text-content">
-                <span class="stat-number">8</span>
-                <span class="stat-description"
-                  >Islamic schools constructed since 2018</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
 
-         <section class="mission-vision-section">
-            <div class="box mission-box">
-                <h3 class="box-title">Our Mission</h3>
-                <p class="box-description">To serve humanity through compassionate, sustainable, and faith-aligned charity programs that improve lives and empower communities.</p>
-                <div class="box-icon-wrapper">
-                    <img src="/assets/about/mission.jpg" alt=""> </div>
-            </div>
+<!-- STATSECTION -->
 
-            <div class="box vision-box">
-                <h3 class="box-title">Our Vision</h3>
-                <p class="box-description">A world where every person—regardless of background or location—has access to food, education, water, spiritual growth, and opportunity.</p>
-                <div class="box-icon-wrapper">
-                    <img src="/assets/about/vision.png" alt=""> </div>
-            </div>
-        </section>
-
-    <section class="what-we-do-section">
-            <div class="container">
-                <p class="section-title-tag">What We Do</p>
-                <div class="what-we-do-grid">
-                    <div class="what-we-do-item">
-                        <span class="item-number">1.</span>
-                        <div class="item-content">
-                            <h4>Orphan Feeding</h4>
-                            <p>Providing nutritious meals to orphans and vulnerable children.</p>
+<div class="stat-container">
+        <!-- Statistics Section -->
+       <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <div class="stat-bottom">
+                        <div class="stat-icon">
+                            <img src="./assets/about/food.png"/>
                         </div>
+                        <div class="stat-description">meals served<br>annually</div>
                     </div>
-                    <div class="what-we-do-item">
-                        <span class="item-number">2.</span>
-                        <div class="item-content">
-                            <h4>Qurban Sacrifice</h4>
-                            <p>Distributing meat during Eid to families in need.</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">800+</span>
+                    <div class="stat-bottom">
+                        <div class="stat-icon">
+                            <img src="./assets/about/family.png"/>
                         </div>
+                        <div class="stat-description">families received<br>Qurban meat in<br>2024</div>
                     </div>
-                    <div class="what-we-do-item">
-                        <span class="item-number">3.</span>
-                        <div class="item-content">
-                            <h4>Quran Distribution</h4>
-                            <p>Supplying Qurans to schools and new Muslims.</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <div class="stat-bottom">
+                        <div class="stat-icon">
+                            <img src="./assets/about/mosque.png"/>
                         </div>
+                        <div class="stat-description">fully constructed<br>masjids in rural<br>villages</div>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <div class="stat-bottom">
+                        <div class="stat-icon">
+                            <img src="./assets/about/school.png"/>
+                        </div>
+                        <div class="stat-description">Islamic schools<br>constructed<br>since 2021</div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-    
-
-          
-       
-
-            <section class="why-who-section">
-            <div class="container">
-                <div class="why-who-grid">
-                    <div class="why-who-item why-exist">
-                        <h3 class="section-title">Why We Exist</h3>
-                        <img src="/assets/about/exist.png" alt="Hands passing a box of goods" class="item-illustration">
-                        <div class="item-text">
-                            <p>In many parts of Eastern Uganda, communities suffer silently – without clean water, education, or a place to pray.</p>
-                            <p>We exist to change that reality through Islamic charity and community-driven solutions.</p>
-                        </div>
-                    </div>
-
-                    <div class="divider-line">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-
-                    <div class="why-who-item who-serve">
-                        <h3 class="section-title">Who We Serve</h3>
-                        <img src="/assets/about/serve.png" alt="Hands giving and receiving money" class="item-illustration">
-                        <div class="item-text">
-                            <p>We extend our aid to the most vulnerable individuals and families, including orphans, widows, the elderly, and those living in remote, underserved regions.</p>
-                            <p>Our focus is on delivering sustainable solutions that foster dignity and self-reliance within these communities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials-section">
-            <div class="container">
-                <p class="section-title-tag">What People Are Saying</p>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <div class="card-header">
-                            <img src="/assets/about/Aisha.jpg" alt="Profile of Aisha" class="profile-img">
-                            <div class="profile-info">
-                                <span class="profile-name">Aisha</span>
-                                <span class="profile-title">Mother of 4 in Iganga</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">Because of Hayat Aid, my children eat every day. I pray Allah rewards all who give.</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="card-header">
-                            <img src="/assets/about/Sulaiman.jpg" alt="Profile of Sulaiman" class="profile-img">
-                            <div class="profile-info">
-                                <span class="profile-name">Sulaiman</span>
-                                <span class="profile-title">Community Elder, Bugweri District</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">Our village has clean water for the first time in years. We no longer walk miles to fetch it.</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="card-header">
-                            <img src="/assets/about/Sharifah.jpg" alt="Profile of Sharifah" class="profile-img">
-                            <div class="profile-info">
-                                <span class="profile-name">Sharifah</span>
-                                <span class="profile-title">Mobility Aid Recipient</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">I used to crawl. Now I move with dignity in my new wheelchair. Jazakum Allahu Khairan.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-                <section class="call-to-action-section">
-            <div class="container cta-container">
-                <div class="cta-image">
-                    <img src="/assets/project/ready.png" alt="Children smiling" class="rounded-image">
-                </div>
-                <div class="cta-content">
-                    <h2>Ready to Make a Difference?</h2>
-                    <p>Your support feeds orphans, builds wells, and brings hope to hundreds.</p>
-                    <a href="sponsor.html" class="btn btn-cta">Sponsor a Project</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container footer-top">
-            <div class="footer-logo-contact">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="/assets/logo.png" alt="Hayat Aid Organization Logo">
-                    </a>
-                </div>
-                <div class="contact-info">
-                    <p><i class="fas fa-phone-alt"></i> Have a question?</p>
-                    <a href="tel:+256788277555">+256 788 277 555</a>
-                    <p><i class="fas fa-envelope"></i> Contact us at</p>
-                    <a href="mailto:info@hayataidorganization.org">info@hayataidorganization.org</a>
-                </div>
-            </div>
-
-            <div class="footer-newsletter">
-                <h3>Newsletter</h3>
-                <p>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-submit">Submit</button>
-                </form>
-            </div>
-
-            <div class="footer-social">
-                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
         </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="projects.html">Our Projects</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <p class="copyright">&copy; 2025 All Rights Reserved</p>
+        <!-- Mission/Vision Section -->
+        <div class="mission-vision-section">
+            <div class="mission-card">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/about/mission.jpg" alt="mission infographic" />
+                    </div>
+                    <div class="card-text">
+                        <h3 class="card-title">Our Mission</h3>
+                        <p class="card-description">
+                            To serve humanity through compassionate, sustainable, and faith-aligned charity programs that improve lives and empower communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-card">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/about/vision.png" alt="vision infographic" />
+                    </div>
+                    <div class="card-text">
+                        <h3 class="card-title">Our Vision</h3>
+                        <p class="card-description">
+                            A world where every person—regardless of background or location—has access to food, education, water, spiritual growth, and opportunity.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-  </body>
+    </div>
+
+
+
+<!-- SCROLLCARDS Yellow-->
+
+
+
+
+ <section class="yellow-testimonials-section">
+        <div class="yellow-section-header">
+            <div class="yellow-section-title">
+                <h2>What We Do</h2>
+            </div>
+            <div class="navigation-arrows">
+                <div class="nav-arrow" id="prevBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12Z"/>
+                    </svg>
+                </div>
+                <div class="nav-arrow" id="nextBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonials-wrapper" id="testimonialsWrapper">
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                    
+                        <div class="yellow-testimonial-info">
+                            <h3>1. Orphan Feeding</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Providing nutritious meals to orphans and vulnerable children.
+                    </div>
+                </div>
+
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                        
+                        <div class="yellow-testimonial-info">
+                            <h3>2. Qurban Sacrifice</h3>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Distributing meat during Eid to families in need.
+                    </div>
+                </div>
+
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                        
+                        <div class="yellow-testimonial-info">
+                            <h3>Quran Distribution</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Supplying Qurans to schools and new Muslims.
+                    </div>
+                </div>
+
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                    
+                        <div class="yellow-testimonial-info">
+                            <h3>1. Orphan Feeding</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Providing nutritious meals to orphans and vulnerable children.
+                    </div>
+                </div>
+
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                        
+                        <div class="tyellow-estimonial-info">
+                            <h3>2. Qurban Sacrifice</h3>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Distributing meat during Eid to families in need.
+                    </div>
+                </div>
+
+                <div class="yellow-testimonial-card">
+                    <div class="testimonial-header">
+                        
+                        <div class="yellow-testimonial-info">
+                            <h3>Quran Distribution</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Supplying Qurans to schools and new Muslims.
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <!-- Dots will be generated by JavaScript -->
+        </div>
+    </section>
+
+
+<script src="./js/script.js">
+        
+    </script>
+
+</body>
 </html>

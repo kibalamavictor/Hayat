@@ -1,0 +1,218 @@
+ .stat-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Statistics Section */
+         .stats-section {
+            background: linear-gradient(135deg, #0ea5e9, #0284c7);
+            border-radius: 30px;
+            padding: 60px 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .stat-item {
+            text-align: left;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 20px;
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .stat-icon img {
+            height: 27px;
+        }
+
+
+        .stat-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        /* Mission/Vision Section */
+        .mission-vision-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .mission-card, .vision-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card {
+            border: 2px solid #0ea5e9;
+        }
+
+        .vision-card {
+            border: 2px solid #f97316;
+        }
+
+        .card-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            padding: 0;
+            align-items: center;
+        }
+
+        .card-text {
+            order: 1;
+        }
+
+        .card-icon {
+            order: 2;
+
+        }
+
+        .card-icon img {
+            max-width: 100px;
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+        }
+
+
+        
+        .card-text {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .mission-card .card-title {
+            color: #0ea5e9;
+        }
+
+        .vision-card .card-title {
+            color: #f97316;
+        }
+
+        .card-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #6b7280;
+        }
+
+        @media (max-width: 868px) {
+            .stats-section {
+                padding: 40px 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .stat-bottom {
+                gap: 15px;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .mission-vision-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .mission-card, .vision-card {
+                padding: 30px;
+            }
+
+            .card-content {
+                gap: 20px;
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-bottom {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .stat-description {
+                text-align: center;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .card-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .card-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .card-icon svg {
+                width: 30px;
+                height: 30px;
+            }
+            .stat-item {
+            text-align: center;
+            }
+        }

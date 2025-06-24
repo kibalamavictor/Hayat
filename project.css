@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #FFFFFF;
-  color: #222;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -17,144 +16,211 @@ body {
 }
 
 /* Header */
-.header {
-  background: #E3F3F9;
-  border-bottom: 1px solid #eee;
-}
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 0;
-}
-.logo {
-  height: 48px;
-}
-.nav a {
-  margin: 0 14px;
-  font-weight: 500;
-  color: #222;
-  transition: color 0.2s;
-  text-decoration: none;
-}
-.nav a:hover {
-  color: #0077c8;
-}
-.donate-btn {
-  background: #0077c8;
-  color: #fff;
-  padding: 10px 28px;
-  border-radius: 24px;
-  font-weight: 600;
-  text-decoration: none;
+.nav {
+    
+    background-color: rgb(237, 247, 251);
+
 
 }
-.donate-btn:hover {
-  background: #005fa3;
-}
-/* Floating Header Styles */
-.floating-header {
-  position: fixed;
-  top: 24px; /* or whatever distance you want from the top */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 180px;
-  background: rgba(255,255,255,0.97);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-  z-index: 1000;
-  padding: 0;
-  transition: box-shadow 0.2s;
-}
 
-/* Hero Section - Full Height, No Rounded Corners */
-.hero {
-  width: 100vw;
-  min-width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  min-height: 520px;
-}
+.hero-bg-image {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 350px;
+            object-fit: cover;
+            z-index: 1;
+        }
 
-.hero-img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100%;
-  min-height: 520px;
-  object-fit: cover;
-  filter: brightness(0.7);
-  z-index: 1;
-  border-radius: 0;
-}
+.hero-content {
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #1f2937;
+            z-index: 50;
 
-.hero-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  text-align: center;
-  width: 100%;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
+        }
 
-/* Floating Header Styles */
-.floating-header {
-  position: absolute;
-  top: 40px; /* Distance from the top of the hero image */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1100px;
-  background: rgba(255,255,255,0.97);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-  z-index: 10;
-  padding: 0;
-}
+.navbar {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1440px;
+            border-radius: 21px;
+            z-index: 100;
+        }
 
-.header-flex {
-  padding: 14px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+        .nav-container {
+            width: 100%;
+            padding: 3rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
 
-.logo {
-  height: 48px;
-}
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
 
-.nav a {
-  margin: 0 14px;
-  font-weight: 500;
-  color: #222;
-  transition: color 0.2s;
-}
-.nav a:hover {
-  color: #0077c8;
-}
-.donate-btn {
-  background: #0077c8;
-  color: #fff;
-  padding: 10px 28px;
-  border-radius: 24px;
-  font-weight: 600;
 
-}
-.donate-btn:hover {
-  background: #005fa3;
-}
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        /* Hide mobile donate item in desktop view */
+        .mobile-donate-item {
+            display: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 18px;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            background-color: #f3f4f6;
+        }
+
+        .nav-donate-btn {
+            background: #2563eb;
+            color: white !important;
+            padding: 12px 44px;
+            border-radius: 12px;
+            font-weight: 300;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-donate-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #374151;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+
+
+         @media (max-width: 1500px) {
+            .navbar {
+                width: 90%;
+                max-width: 1352px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .navbar {
+                width: 90%;
+                max-width: 1152px;
+            }
+        }
+
+        @media (max-width: 1290px) {
+            .navbar {
+                width: 95%;
+                top: 50px;
+                padding: 0 1rem;
+            }
+
+            .nav-container {
+                height: 70px;
+            }
+
+            .logo img {
+                
+                height: 40px;
+            }
+
+           
+
+            /* Hide the donate button in mobile view */
+            .nav-donate-btn {
+                display: none;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                gap: 0;
+                border-radius: 0 0 8px 8px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+            }
+
+            /* Show mobile donate item only in mobile view */
+            .mobile-donate-item {
+                display: block;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 1rem;
+                border-bottom: 1px solid #f3f4f6;
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+
+        
+
+        
+
+        
+
+        
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -247,21 +313,19 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-  .header-flex {
+  /* .header-flex {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
     width: 100%;
     padding: 10px 0;
-  }
-  .logo {
+  } */
+  /* .logo {
     height: 36px;
     margin-right: 8px;
-  }
-  .nav-toggle {
-    margin: 0 8px;
-  }
+  } */
+/*   
   .donate-btn {
     display: inline-block !important;
     margin-left: 8px;
@@ -270,13 +334,7 @@ body {
     border-radius: 18px;
     white-space: nowrap;
   }
-  .nav {
-    display: none;
-  }
-  .mobile-nav {
-    left: 0;
-    width: 100vw;
-  }
+  
   .hero {
     width: 100vw;
     margin: 0 -6px;
@@ -289,7 +347,7 @@ body {
   .hero-title {
     font-size: 1.5rem;
     padding: 0 8px;
-  }
+  } */
   .projects-intro {
     margin-left: 16px;
     margin-right: 16px;
@@ -447,9 +505,9 @@ body {
     height: auto;
     max-height: 180px;
   }
-  .logo {
+  /* .logo {
     height: 28px;
-  }
+  } */
   .hero-title {
     font-size: 1.1rem;
   }
@@ -901,7 +959,7 @@ body {
   padding: 10px 28px;
   border-radius: 24px;
   font-weight: 600;
-  transition: background 0.2s, color 0.2s;
+  transition: 0.2s, color 0.2s;
     text-decoration: none;
 }
 .cta-btn:hover {
@@ -914,7 +972,7 @@ body {
   border-top: none;
   padding: 0;
   font-family: 'Poppins', Arial, sans-serif;
-  margin-left: 40px;
+  margin-left: 100px;
   margin-right: 40px;
 }
 
@@ -1161,7 +1219,7 @@ body {
 }
 
 /* Hamburger menu styles */
-.nav-toggle {
+/* .nav-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -1189,10 +1247,10 @@ body {
 }
 .nav-toggle.open .nav-toggle-bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
-}
+} */
 
 /* Mobile nav styles */
-.mobile-nav {
+/* .mobile-nav {
   display: none;
   position: absolute;
   top: 60px;
@@ -1225,9 +1283,9 @@ body {
 }
 .mobile-nav.open {
   display: flex;
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .nav {
     display: none;
   }
@@ -1251,7 +1309,7 @@ body {
   .nav-toggle {
     display: none !important;
   }
-}
+} */
 
 /* Image Styling */
 .project-img {

@@ -5,9 +5,29 @@
 
 }
 
+.hero-bg-image {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 350px;
+            object-fit: cover;
+            z-index: 1;
+        }
 
+.hero-content {
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #1f2937;
+            z-index: 50;
 
-
+            h1 {
+                color: white;
+            }
+        }
 
 .navbar {
             background-color: white;
@@ -64,7 +84,7 @@
             background-color: #f3f4f6;
         }
 
-        .donate-btn {
+        .nav-donate-btn {
             background: #2563eb;
             color: white !important;
             padding: 12px 44px;
@@ -78,7 +98,7 @@
             cursor: pointer;
         }
 
-        .donate-btn:hover {
+        .nav-donate-btn:hover {
             background: #1d4ed8;
             transform: translateY(-1px);
             box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
@@ -129,7 +149,7 @@
            
 
             /* Hide the donate button in mobile view */
-            .donate-btn {
+            .nav-donate-btn {
                 display: none;
             }
 

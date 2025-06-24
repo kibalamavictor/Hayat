@@ -23,11 +23,11 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="projects.html">Our Projects</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li class="mobile-donate-item"><a href="#donate">Donate</a></li>
                 </ul>
 
-                <a href="#donate" class="donate-btn">Donate</a>
+                <a href="#donate" class="nav-donate-btn">Donate</a>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     ☰
@@ -127,68 +127,58 @@
 <!-- OUR CORE PROJECTS -->
 
 
-
-  <section class="projects-section">
+ <section class="core-projects">
         <div class="section-header">
-            <div class="section-title">
-                <div class="section-label">Our Core Projects</div>
-                <h1 class="main-heading">Our Core Projects</h1>
-            </div>
+            <h2 class="section-title">Our Core Projects</h2>
             <div class="navigation-arrows">
-                <div class="nav-arrow prev" onclick="scrollProjects('left')"></div>
-                <div class="nav-arrow next" onclick="scrollProjects('right')"></div>
-            </div>
+                <button class="nav-arrow prev" onclick="slideProjects('prev')"></button>
+                <button class="nav-arrow next" onclick="slideProjects('next')"></button>
+                </div>
+        </div>
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-container">
+            <div class="projects-grid" id="projectsGrid">
             <div class="project-card">
-                <div class="card-image">
-                    <img src="./assets/orphan feeding.png" alt="Orphan Feeding Program">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Orphan Feeding</h3>
-                    <p class="card-description">We provide nutritious meals to orphans, ensuring their health and happiness.</p>
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Orphan Feeding" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Orphan Feeding</h3>
+                    <p class="project-description">We provide nutritious meals to orphans, ensuring their health and happiness.</p>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="card-image">
-                    <img src="./assets/water well construction.png" alt="Water Well Construction">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Water Well Construction</h3>
-                    <p class="card-description">We dig boreholes and water wells to provide clean, safe drinking water to entire villages.</p>
+                <img src="https://images.unsplash.com/photo-1541844053589-346841d0b34c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Water Well Construction" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Water Well Construction</h3>
+                    <p class="project-description">We dig boreholes and water wells to provide clean, safe drinking water to entire villages.</p>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="card-image">
-                    <img src="./assets/foodpack_distribution.png" alt="Food Pack Distribution">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Food Pack Distribution</h3>
-                    <p class="card-description">We distribute food packages filled with daily essentials to struggling families.</p>
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Food Pack Distribution" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Food Pack Distribution</h3>
+                    <p class="project-description">We distribute food packages filled with daily essentials to struggling families.</p>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="card-image">
-                    <img src="./assets/quran distributio.png" alt="Quran Distribution">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Quran Distribution</h3>
-                    <p class="card-description">We supply Qurans to madrasas and new Muslims to support spiritual learning.</p>
+                <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Quran Distribution" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Quran Distribution</h3>
+                    <p class="project-description">We supply Qurans to madrasas and new Muslims to support spiritual learning.</p>
                 </div>
             </div>
         </div>
 
-        <a href="#" class="see-all-btn">See all our Projects</a>
+        <button class="see-all-btn" onclick="showAllProjects()">See all our Projects</button>
     </section>
-    
+  
 
 
 
-<!-- OUR CORE PROJECTS -->
+<!-- WHY CHOOSE US -->
 
 
 <section class="why-choose-section">
@@ -426,224 +416,8 @@
     
     
 
-     <script>
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.textContent = '☰';
-            }
-        });
-
-
-
-
-
-
-        // ABOUT US
-
-
-
-         function scrollProjects(direction) {
-            const grid = document.querySelector('.projects-grid');
-            const cardWidth = 330; // Approximate width of card + gap
-            
-            if (direction === 'left') {
-                grid.scrollBy({
-                    left: -cardWidth,
-                    behavior: 'smooth'
-                });
-            } else {
-                grid.scrollBy({
-                    left: cardWidth,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        // Add smooth scrolling for horizontal scroll on mobile
-        const projectsGrid = document.querySelector('.projects-grid');
+     <script src="./js/script.js">
         
-        // Optional: Add touch/swipe support for mobile
-        let startX;
-        let scrollLeft;
-
-        projectsGrid.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].pageX;
-            scrollLeft = projectsGrid.scrollLeft;
-        });
-
-        projectsGrid.addEventListener('touchmove', (e) => {
-            if (!startX) return;
-            
-            const x = e.touches[0].pageX;
-            const walk = (startX - x) * 2;
-            projectsGrid.scrollLeft = scrollLeft + walk;
-        });
-
-        projectsGrid.addEventListener('touchend', () => {
-            startX = null;
-        });
-
-
-
-
-
-
-        // OUR CORE PROJECTS
-
-function toggleAccordion(header) {
-            const item = header.parentElement;
-            const wasActive = item.classList.contains('active');
-            
-            // Close all accordion items
-            document.querySelectorAll('.accordion-item').forEach(accordionItem => {
-                accordionItem.classList.remove('active');
-            });
-            
-            // Open clicked item if it wasn't active
-            if (!wasActive) {
-                item.classList.add('active');
-            }
-        }
-
-        // Initialize first accordion as open
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstAccordion = document.querySelector('.accordion-item');
-            if (firstAccordion) {
-                firstAccordion.classList.add('active');
-            }
-        });
-
-
-
-
-
-        // SCROLLCARDS
-
-
-       const wrapper = document.getElementById('testimonialsWrapper');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const scrollIndicator = document.getElementById('scrollIndicator');
-        const cards = document.querySelectorAll('.testimonial-card');
-
-        // Calculate scroll amount based on card width + gap
-        const cardWidth = 400;
-        const gap = 30;
-        const scrollAmount = cardWidth + gap;
-
-        // Create scroll indicator dots
-        function createScrollDots() {
-            const totalCards = cards.length;
-            const visibleCards = Math.floor(wrapper.offsetWidth / scrollAmount);
-            const totalDots = Math.max(1, totalCards - visibleCards + 1);
-
-            scrollIndicator.innerHTML = '';
-            for (let i = 0; i < totalDots; i++) {
-                const dot = document.createElement('div');
-                dot.className = 'scroll-dot';
-                dot.addEventListener('click', () => scrollToPosition(i));
-                scrollIndicator.appendChild(dot);
-            }
-            updateActiveDot();
-        }
-
-        // Update active dot based on scroll position
-        function updateActiveDot() {
-            const dots = scrollIndicator.querySelectorAll('.scroll-dot');
-            const scrollLeft = wrapper.scrollLeft;
-            const activeIndex = Math.round(scrollLeft / scrollAmount);
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === activeIndex);
-            });
-        }
-
-        // Scroll to specific position
-        function scrollToPosition(index) {
-            const scrollLeft = index * scrollAmount;
-            wrapper.scrollTo({
-                left: scrollLeft,
-                behavior: 'smooth'
-            });
-        }
-
-        // Navigation button functionality
-        prevBtn.addEventListener('click', () => {
-            const currentScroll = wrapper.scrollLeft;
-            const newScroll = Math.max(0, currentScroll - scrollAmount);
-            wrapper.scrollTo({
-                left: newScroll,
-                behavior: 'smooth'
-            });
-        });
-
-        nextBtn.addEventListener('click', () => {
-            const currentScroll = wrapper.scrollLeft;
-            const maxScroll = wrapper.scrollWidth - wrapper.offsetWidth;
-            const newScroll = Math.min(maxScroll, currentScroll + scrollAmount);
-            wrapper.scrollTo({
-                left: newScroll,
-                behavior: 'smooth'
-            });
-        });
-
-        // Update dots on scroll
-        wrapper.addEventListener('scroll', updateActiveDot);
-
-        // Initialize on load and resize
-        window.addEventListener('load', createScrollDots);
-        window.addEventListener('resize', createScrollDots);
-
-        // Touch/swipe support for mobile
-        // let startX = 0;
-        // let scrollLeft = 0;
-        let isDown = false;
-
-        wrapper.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - wrapper.offsetLeft;
-            scrollLeft = wrapper.scrollLeft;
-        });
-
-        wrapper.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        wrapper.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
-        wrapper.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - wrapper.offsetLeft;
-            const walk = (x - startX) * 2;
-            wrapper.scrollLeft = scrollLeft - walk;
-        });
-
-        // Touch events for mobile
-        wrapper.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].pageX - wrapper.offsetLeft;
-            scrollLeft = wrapper.scrollLeft;
-        });
-
-        wrapper.addEventListener('touchmove', (e) => {
-            const x = e.touches[0].pageX - wrapper.offsetLeft;
-            const walk = (x - startX) * 2;
-            wrapper.scrollLeft = scrollLeft - walk;
-        });
-
-
     </script>
 </body>
 </html>
