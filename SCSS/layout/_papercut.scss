@@ -3,7 +3,7 @@
             align-items: center;
             justify-content: center;
             min-height: 70vh;
-            padding: 40px 20px;
+            padding: 90px 20px;
             gap: 60px;
             max-width: 1200px;
             margin: 0 auto;
@@ -63,34 +63,33 @@
         .content-container {
             flex: 1;
             max-width: 500px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 26px;
+            }
+        }
+
+        .blue-top-bar {
+            background-color: var(--title-color);
+            height: 8px;
+            width: 55px;
         }
 
         .section-label1 {
-            color: #0984e3;
-            font-weight: 700;
-            font-size: 2.5rem;
-            margin: 8px 0 ;
-            // text-transform: uppercase;
+            color: var(--title-color);
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 10px 0 35px;
             letter-spacing: 1px;
             position: relative;
         }
 
-        .section-label1::before {
-            content: '';
-            position: absolute;
-            left: 0px;
-            top: 0;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 5px;
-            background: #0984e3;
-            
-        }
 
         .main-heading1 {
             font-size: 2.5rem;
             font-weight: 550;
-            color: #2d3436;
+            color: #000;
             margin-bottom: 30px;
             line-height: 1.2;
         }
@@ -101,14 +100,14 @@
         }
 
         .description1 {
-            color: #636e72;
+            color: var(--text-color);
             font-size: 16px;
             margin-bottom: 25px;
             line-height: 1.7;
         }
 
         .services-text {
-            color: #636e72;
+            color: var(--text-color);
             font-size: 16px;
             margin-bottom: 40px;
             line-height: 1.7;
@@ -118,8 +117,8 @@
             display: inline-block;
             padding: 12px 30px;
             background: transparent;
-            color: #0984e3;
-            border: 2px solid #0984e3;
+            color: var(--button-color);
+            border: 2px solid var(--button-color);
             border-radius: 12px;
             text-decoration: none;
             transition: all 0.3s ease;
@@ -127,7 +126,7 @@
         }
 
         .learn-more-btn:hover {
-            background: #0984e3;
+            background: var(--button-color);
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
@@ -169,7 +168,7 @@
             .about-section {
                 flex-direction: column;
                 gap: 40px;
-                text-align: center;
+                text-align: left;
             }
 
             .hands-image {

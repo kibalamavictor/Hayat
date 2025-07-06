@@ -12,7 +12,7 @@
   <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                <img src="./assets/logo.png" alt="Hayat Logo" class="logo-img" height="55px">
+                <img src="./assets/navbar/nav-bar-logo.png" alt="Hayat Logo" class="logo-img" height="55px">
                 </a>
 
                 <ul class="nav-links" id="navLinks">
@@ -24,7 +24,7 @@
                     <li class="mobile-donate-item"><a href="#donate">Donate</a></li>
                 </ul>
 
-                <a href="#donate" class="nav-donate-btn">Donate</a>
+                <a href="./contact.html" class="nav-donate-btn">Donate</a>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     ☰
@@ -152,23 +152,60 @@
 
 
 
+
+    <!-- Core Values Section -->
+
+    
+    <section class="core-values-section">
+        <div class="core-values-container">
+            <h2 class="values-title">CORE VALUES</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3 class="value-number">1.</h3>
+                    <h4 class="value-name">Compassion</h4>
+                    <p class="value-description">We prioritize empathy and kindness, understanding the struggles of others. Our actions are guided by a deep commitment to serving humanity, fostering a culture of care, and providing support to those in need with dignity and respect.</p>
+                </div>
+                <div class="value-item">
+                    <h3 class="value-number">2.</h3>
+                    <h4 class="value-name">Integrity</h4>
+                    <p class="value-description">We operate with transparency, honesty, and accountability, ensuring our words and actions align. Our financial practices, decision-making processes, and relationships are built on trust, ethics, and a strong moral compass, reflecting our commitment to integrity.</p>
+                </div>
+                <div class="value-item">
+                    <h3 class="value-number">3.</h3>
+                    <h4 class="value-name">Inclusivity</h4>
+                    <p class="value-description">We believe in the inherent worth of every individual, serving diverse communities without bias. Our initiatives promote equality, respect, and opportunities for all, embracing the richness of different backgrounds, cultures, and perspectives to create a more just and compassionate world.</p>
+                </div>
+                <div class="value-item">
+                    <h3 class="value-number">4.</h3>
+                    <h4 class="value-name">Excellence</h4>
+                    <p class="value-description">We strive for quality, efficiency, and effectiveness in all we do, setting high standards and continuously improving. Our commitment to excellence ensures our programs and services make a meaningful impact, empowering individuals and communities to thrive.</p>
+                </div>
+                <div class="value-item">
+                    <h3 class="value-number">5.</h3>
+                    <h4 class="value-name">Sustainability</h4>
+                    <p class="value-description">We prioritize long-term impact and responsible stewardship, ensuring our initiatives are environmentally conscious and financially viable. By building lasting relationships and sustainable solutions, we create a brighter future for generations to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 <!-- SCROLLCARDS Yellow-->
 
 
 
-
- <section class="yellow-testimonials-section">
+<section class="yellow-testimonials-section">
         <div class="yellow-section-header">
             <div class="yellow-section-title">
                 <h2>What We Do</h2>
             </div>
             <div class="navigation-arrows">
-                <div class="nav-arrow" id="prevBtn">
+                <div class="nav-arrow" data-section="yellow" data-action="prev">
                     <svg viewBox="0 0 24 24">
                         <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12Z"/>
                     </svg>
                 </div>
-                <div class="nav-arrow" id="nextBtn">
+                <div class="nav-arrow" data-section="yellow" data-action="next">
                     <svg viewBox="0 0 24 24">
                         <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12Z"/>
                     </svg>
@@ -177,13 +214,11 @@
         </div>
 
         <div class="testimonials-container">
-            <div class="testimonials-wrapper" id="testimonialsWrapper">
+            <div class="testimonials-wrapper" data-section="yellow">
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                    
                         <div class="yellow-testimonial-info">
                             <h3>1. Orphan Feeding</h3>
-                            
                         </div>
                     </div>
                     <div class="testimonial-text">
@@ -193,7 +228,6 @@
 
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                        
                         <div class="yellow-testimonial-info">
                             <h3>2. Qurban Sacrifice</h3>
                         </div>
@@ -205,10 +239,8 @@
 
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                        
                         <div class="yellow-testimonial-info">
-                            <h3>Quran Distribution</h3>
-                            
+                            <h3>3. Quran Distribution</h3>
                         </div>
                     </div>
                     <div class="testimonial-text">
@@ -218,55 +250,370 @@
 
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                    
                         <div class="yellow-testimonial-info">
-                            <h3>1. Orphan Feeding</h3>
-                            
+                            <h3>4. Clean Water Projects</h3>
                         </div>
                     </div>
                     <div class="testimonial-text">
-                        Providing nutritious meals to orphans and vulnerable children.
+                        Building wells and water systems for communities in need.
                     </div>
                 </div>
 
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                        
-                        <div class="tyellow-estimonial-info">
-                            <h3>2. Qurban Sacrifice</h3>
+                        <div class="yellow-testimonial-info">
+                            <h3>5. Educational Support</h3>
                         </div>
                     </div>
                     <div class="testimonial-text">
-                        Distributing meat during Eid to families in need.
+                        Providing scholarships and school supplies to students.
                     </div>
                 </div>
 
                 <div class="yellow-testimonial-card">
                     <div class="testimonial-header">
-                        
                         <div class="yellow-testimonial-info">
-                            <h3>Quran Distribution</h3>
-                            
+                            <h3>6. Medical Aid</h3>
                         </div>
                     </div>
                     <div class="testimonial-text">
-                        Supplying Qurans to schools and new Muslims.
+                        Offering healthcare services and medical equipment to those in need.
                     </div>
                 </div>
-
-                
             </div>
         </div>
 
-        <div class="scroll-indicator" id="scrollIndicator">
+        <div class="scroll-indicator" data-section="yellow">
             <!-- Dots will be generated by JavaScript -->
         </div>
     </section>
 
 
-<script src="./js/script.js">
+
+
+
+
+
+
+
+  <!-- WHY WE EXSIST SECTION -->
+
+
+  <div class="scroll-wrapper">
+    <button class="section-scroll-btn section-scroll-left" onclick="scrollSections('left')">
+        <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+    </button>
+    
+    <div class="scrollable-container" id="scrollContainer">
+        <div class="four-column-grid">
+            <div class="why-we-exist-container">
+                <div class="title-wrapper">
+                    <h3 class="why-we-exist-title">Why We Exist</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="image-container">
+                        <img src="./assets/about/exist.png" 
+                             alt="Students in classroom in Eastern Uganda" 
+                             class="main-image">
+                    </div>
+                    
+                    <div class="content-section">
+                        <p>In many parts of Eastern Uganda, communities suffer silently — without clean water, education, or a place to pray.</p>
+                        
+                        <p>We exist to change that reality through Islamic charity and community-driven solutions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-we-exist-container">
+                <div class="title-wrapper">
+                    <h3 class="why-we-exist-title">Who We Serve</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="image-container">
+                        <img src="./assets/about/serve.png" 
+                             alt="Community water well in Uganda" 
+                             class="main-image">
+                    </div>
+                    
+                    <div class="content-section">
+                        <ul>
+                            <li>Orphans and widows</li>
+                            <li>Rural and low-income communities</li>
+                            <li>People with disabilities</li>
+                            <li>Quran schools and madrasa students</li>
+                            <li>Villages without access to clean water or prayer spaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-we-exist-container">
+                <div class="title-wrapper">
+                    <h3 class="why-we-exist-title">Our Values</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="image-container">
+                        <img src="./assets/about/our-values.png" 
+                             alt="Community mosque and education center" 
+                             class="main-image">
+                    </div>
+                    
+                    <div class="content-section">
+                        <p><strong>Compassion:</strong><br>We believe every life matters.</p>
+                        
+                        <p><strong>Transparency:</strong><br>We show where every donation goes.</p>
+                        
+                        <p><strong>Faith:</strong><br>Our work is guided by Islamic values of mercy and generosity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-us-container">
+                <h2 class="join-us-title">Join Us</h2>
+                
+                <div class="join-us-text">
+                    Your support makes this possible. Whether you donate, sponsor, volunteer, or simply share our mission<br><br>
+                    You become a part of something greater.
+                </div>
+                
+                <div class="join-us-buttons">
+                    <a href="./contact.html" class="join-us-btn donate-btn">Donate Now</a>
+                    <a href="./contact.html" class="join-us-btn sponsor-btn">Sponsor a Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="section-scroll-btn section-scroll-right" onclick="scrollSections('right')">
+        <svg viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+    </button>
+</div>
+
+
+
+
+
+    <!-- SCROLLCARDS -->
+
+
+
+
+    <section class="testimonials-section">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="blue-top-bar"></div>
+                <h2>What People Are<br>Saying</h2>
+            </div>
+            <div class="navigation-arrows">
+                <div class="nav-arrow" id="grayPrevBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12Z"/>
+                    </svg>
+                </div>
+                <div class="nav-arrow" id="grayNextBtn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonials-wrapper" id="grayTestimonialsWrapper">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/aisha.png" alt="Aisha">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Aisha</h3>
+                            <p>Mother of 4 in Iganga</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Because of Hayat Aid, my children eat every day. I pray Allah rewards all who give.
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/sula.png" alt="Sulaiman">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Sulaiman</h3>
+                            <p>Community Elder, Bugweri District</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        Our village has clean water for the first time in years. We no longer walk miles to fetch it.
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/sharif.png" alt="Sharifah">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Sharifah</h3>
+                            <p>Mobility Aid Recipient</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        I used to crawl. Now I move with dignity in my new wheelchair. Jazakum Allahu Khairan.
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/sula.png" alt="Ibrahim">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Ibrahim</h3>
+                            <p>Student, Kampala</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        The scholarship program changed my life. Now I can focus on my studies without worrying about fees.
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/aisha.png" alt="Fatima">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Fatima</h3>
+                            <p>Widow, Jinja District</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        After my husband passed, Hayat Aid helped me start a small business. Now I can support my family.
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="./assets/sula.png" alt="Ahmed">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Ahmed</h3>
+                            <p>Farmer, Mayuge District</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        The farming tools and seeds provided have doubled my harvest. My family is no longer hungry.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="grayScrollIndicator">
+            <!-- Dots will be generated by JavaScript -->
+        </div>
+    </section>
+
+
+
+
+<!-- FOOTER SECTION -->
+        
+   <footer class="footer-container">
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-image">
+                <img src="./assets/footer/footer-image.jpg" alt="Happy children smiling">
+            </div>
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Make<br>a Difference?</h2>
+                <p class="cta-description">Your support feeds orphans, builds wells, and brings hope to hundreds.</p>
+                <a href="./contact.html"><button class="cta-button" onclick="sponsorProject()">Sponsor a Project</button></a>
+            </div>
+        </section>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="./assets/logo.png" alt="Hayat Aid Organization Logo" class="logo-image">
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="./assets/footer/phone.png" height="36px"></div>
+                        <div class="contact-text">
+                            <div class="contact-label">Have a question?</div>
+                            <a href="tel:+256788277555" class="contact-value">+256 788 277 555</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="./assets/footer/mail.png" height="36px"></div>
+                        <div class="contact-text">
+                            <div class="contact-label">Contact us at</div>
+                            <a href="mailto:info@hayataidorganization.org" class="contact-value">info@hayataidorganization.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <div class="newsletter-section">
+                    <h3 class="newsletter-title">Newsletter</h3>
+                    <p class="newsletter-description">Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</p>
+                    <form class="newsletter-form" onsubmit="submitNewsletter(event)">
+                        <div class="newsletter-icon"><img src="./assets/footer/mail.png" height="22px" ></div>
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="newsletter-social-container">
+                    <div></div> <!-- Empty div for spacing -->
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Website"><img src="./assets/footer/internet.png" height="26px"></a>
+                        <a href="tel:+256788277555" class="social-icon" title="WhatsApp"><img src="./assets/footer/whatsapp.png" height="26px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./projects.html">Our Projects</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+            </nav>
+            <div class="footer-copyright">© 2025, All Rights Reserved</div>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js">
         
     </script>
+    
+
+     
 
 </body>
 </html>

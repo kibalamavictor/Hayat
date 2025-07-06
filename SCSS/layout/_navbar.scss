@@ -26,6 +26,7 @@
 
             h1 {
                 color: white;
+                white-space: nowrap;
             }
         }
 
@@ -33,7 +34,7 @@
             background-color: white;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             position: absolute;
-            top: 100px;
+            top: 40px;
             left: 50%;
             transform: translateX(-50%);
             width: 1440px;
@@ -71,7 +72,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #374151;
+            color: var(--navlinks-color);
             font-size: 18px;
             padding: 0.5rem 1rem;
             border-radius: 6px;
@@ -80,12 +81,12 @@
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: var(--button-hover-color);
             background-color: #f3f4f6;
         }
 
         .nav-donate-btn {
-            background: #2563eb;
+            background: var(--button-color);
             color: white !important;
             padding: 12px 44px;
             border-radius: 12px;
@@ -93,15 +94,13 @@
             font-size: 20px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
             border: none;
             cursor: pointer;
         }
 
         .nav-donate-btn:hover {
-            background: #1d4ed8;
+            background: var(--button-hover-color);
             transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
         }
 
         .mobile-menu-btn {

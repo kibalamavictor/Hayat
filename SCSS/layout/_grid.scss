@@ -4,7 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto ;
     gap: 30px;
-    padding-top: 200px;
+    padding-top: 150px;
     max-width: 1200px;
     margin-inline: auto;
     height: auto;
@@ -12,9 +12,6 @@
 
     justify-content: center;
 
-    // @media (max-width:1122px) {
-    //     top: 15vh;
-    // }
 
     @media (min-width:900px) {
         grid-template-columns: 1fr 2fr;
@@ -32,8 +29,11 @@
         flex-direction: column;
         justify-content: center;
         h1 {
-            color: #009ADA;
+            color: var(--title-color);
             font-size: 45px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            
         }
 
         .main__buttons {
@@ -43,7 +43,7 @@
         }
 
         .main__buttons__first {
-            background: #2563eb;
+            background: var(--button-color);
             color: white !important;
             padding: 12px 35px;
             border-radius: 12px;
@@ -51,15 +51,13 @@
             font-size: 16px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
             border: none;
             cursor: pointer;
         }
 
         .main__buttons__first:hover {
-            background: #1d4ed8;
+            background: var(--button-hover-color);
             transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
         }
 
         .main__buttons__second {
@@ -71,7 +69,6 @@
             font-size: 16px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
             border: none;
             cursor: pointer;
         }
@@ -79,16 +76,23 @@
         .main__buttons__second:hover {
             background: #f6f6f6;
             transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+            box-shadow: 0 6px 16px rgba(190, 190, 190, 0.35);
         }
 
+
+          @media (max-width:700px) {
+              h1 {
+              color: #009ada;
+              font-size: 35px;
+              line-height: 1.25;
+
+            }
+}
 
     }
 
     &__sidebar {
         position: relative;
-       
-
 
         @media (min-width:700px) {
         grid-template-columns: 1fr 1fr;
@@ -105,19 +109,59 @@
                         
                         .aside__image1 {
                             
-                            max-width: 100%;
-                            height: auto;
+                            max-width: 400px;
+                            // height: auto;
 
                         }
                     }
-                .aside__image1 {
-                            
-                            // max-width: 100%;
-                            // height: 250px;
 
-                             width: 100%;
-                              height: auto;
-                              display: block; 
+                    @media (min-width:900px) and (max-width:1024px) {
+
+                            max-width: 300px;
+                            height: auto;
+                    }
+
+                    @media (min-width:1300px) {
+                       left: 37%;
+                       
+                      }
+
+                      @media (min-width:1200px) and (max-width: 1300px) {
+                       left: 30%;
+                       
+                      }
+                    
+                    .aside__image1 {
+                      height: 250px;
+                      display: block; 
+                      
+                      
+                      @media (min-width:600px) {
+                        max-width: 480px;
+                        height: auto;
+                        
+                      }
+
+                      @media (min-width:900px) {
+                       max-width: 300px;
+                       height: auto;
+                  
+                       
+                      }
+                      
+                      
+                      
+                      @media (min-width: 1200px){
+                        max-width: 350px;
+                        height: auto;
+                        
+                      }
+                      
+                      @media (min-width:1300px) {
+                       max-width: 480px;
+                       height: auto;
+    
+                      }
 
                         }
             }
@@ -125,21 +169,41 @@
             .image2 {
                 position: absolute;
                 top: 20%;
-            }
+                left: 10%;
 
-            .aside__image2 {
-            // max-width: 100%;
-            // height: 150px;
-            width: 100%;
-            height: auto;
-            display: block;
+                @media (min-width:1300px) {
+                  top: 15%;
+                }
+
+                
+              }
+              
+              .aside__image2 {
+                height: 200px;;
+                display: block;
+                
+                @media (min-width:1300px) {
+                  top: 10%;
+                  height: 320px;
+                  
+                }
+
+                @media (max-width: 600px) {
+                 height: 150px;
+                }
+
+                @media (min-width:900px) and (max-width: 1200px){
+                  height: 150px;
+                }
+
+
             }
 
 
     .impact-badge1 {
         position: absolute;
         top: -18px;
-        left: 20%;
+        left: 10%;
       display: inline-flex;
       align-items: center;
       background: white;
@@ -186,8 +250,8 @@
     }
 
     .impact-badge2 {
-        position: absolute;
- display: inline-flex;
+      position: absolute;
+      display: inline-flex;
       align-items: center;
       background: white;
       border-radius: 26px;
@@ -196,10 +260,17 @@
       gap: 12px;
       white-space: nowrap;
 
-      @media (min-width:900px) {
-        top: 40%;
-        left:70%;
+      @media (min-width:900px) and (max-width:1300px) {
+        top: 5%;
+        left:10%;
        }
+
+      @media (min-width:1300px) {
+        top: 57%;
+        left:60%;
+
+      }
+
 
     .impact-icon {
       background-color: #009ADA;

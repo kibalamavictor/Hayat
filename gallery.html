@@ -14,7 +14,7 @@
   <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                <img src="./assets/logo.png" alt="Hayat Logo" class="logo-img" height="55px">
+                <img src="./assets/navbar/nav-bar-logo.png" alt="Hayat Logo" class="logo-img" height="55px">
                 </a>
 
                 <ul class="nav-links" id="navLinks">
@@ -23,10 +23,10 @@
                     <li><a href="projects.html">Our Projects</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li class="mobile-donate-item"><a href="#donate">Donate</a></li>
+                    <li class="mobile-donate-item"><a href="./contact.html">Donate</a></li>
                 </ul>
 
-                <a href="#donate" class="nav-donate-btn">Donate</a>
+                <a href="./contact.html" class="nav-donate-btn">Donate</a>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     ☰
@@ -47,7 +47,7 @@
                     Every donation tells a story. Every project touches lives. Here are moments captured from the field — from feeding orphans to opening new wells, distributing Qurans, and building mosques.
                 </p>
             </div>
-
+            <div class="bluebar-g"></div>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="./assets/gallery/kids1.png" alt="Children at school doorway">
@@ -73,6 +73,91 @@
             </div>
         </div>
     </div>
+
+
+ <!-- FOOTER SECTION -->
+        
+   <footer class="footer-container">
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-image">
+                <img src="./assets/footer/footer-image.jpg" alt="Happy children smiling">
+            </div>
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Make<br>a Difference?</h2>
+                <p class="cta-description">Your support feeds orphans, builds wells, and brings hope to hundreds.</p>
+                <a href="./contact.html"><button class="cta-button" onclick="sponsorProject()">Sponsor a Project</button></a>
+            </div>
+        </section>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="./assets/logo.png" alt="Hayat Aid Organization Logo" class="logo-image">
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="./assets/footer/phone.png" height="36px"></div>
+                        <div class="contact-text">
+                            <div class="contact-label">Have a question?</div>
+                            <a href="tel:+256788277555" class="contact-value">+256 788 277 555</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="./assets/footer/mail.png" height="36px"></div>
+                        <div class="contact-text">
+                            <div class="contact-label">Contact us at</div>
+                            <a href="mailto:info@hayataidorganization.org" class="contact-value">info@hayataidorganization.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <div class="newsletter-section">
+                    <h3 class="newsletter-title">Newsletter</h3>
+                    <p class="newsletter-description">Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</p>
+                    <form class="newsletter-form" onsubmit="submitNewsletter(event)">
+                        <div class="newsletter-icon"><img src="./assets/footer/mail.png" height="22px" ></div>
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="newsletter-social-container">
+                    <div></div> <!-- Empty div for spacing -->
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Website"><img src="./assets/footer/internet.png" height="26px"></a>
+                        <a href="tel:+256788277555" class="social-icon" title="WhatsApp"><img src="./assets/footer/whatsapp.png" height="26px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./projects.html">Our Projects</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+            </nav>
+            <div class="footer-copyright">© 2025, All Rights Reserved</div>
+        </div>
+    </footer>
+
+
+    
+    
+
+     <script src="./js/script.js">
+        
+    </script>
 
 </body>
 </html>
